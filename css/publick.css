@@ -1,0 +1,38 @@
+@charset "UTF-8";
+charset
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+a, u {
+  text-decoration: none; }
+
+i, em {
+  font-style: normal; }
+
+b, strong {
+  font-weight: 100; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: 100; }
+
+img {
+  border: 0;
+  display: block; }
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  display: block; }
+
+/*公共头部*/
+/*公共尾部*/
+
+/*# sourceMappingURL=publick.css.map */
