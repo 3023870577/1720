@@ -1,68 +1,176 @@
-/*
-Error: Invalid GBK character "\xE5"
-        on line 9 of E:/Mossel or Nothing/Mossel-or-Nothing/sass/publick.scss
-        from line 1 of E:\Mossel or Nothing\Mossel-or-Nothing\sass\index.scss
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
 
-4: i,em{font-style:normal;}
-5: b,strong{font-weight:100;}
-6: h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:100;}
-7: img{border:0;display:block;}
-8: .clearfix:after{content:".";clear:both;height:0;visibility:hidden;overflow:hidden;display:block;}
-9: /*公共头部*\/
-10: #header{
-11:     width:100%;
-12:     .top-content{
-13:         width: 100%;
-14:         font-size: 12px;
+ul, ol, li {
+  list-style: none; }
 
-Backtrace:
-E:/Mossel or Nothing/Mossel-or-Nothing/sass/publick.scss:9
-E:\Mossel or Nothing\Mossel-or-Nothing\sass\index.scss:1
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:902:in `rescue in check_sass_encoding'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:898:in `check_sass_encoding'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:299:in `to_tree'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-E:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-E:/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-E:/Koala/bin/sass:18:in `load'
-E:/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid GBK character \"\xE5\"\A         on line 9 of E:/Mossel or Nothing/Mossel-or-Nothing/sass/publick.scss\A         from line 1 of E:\Mossel or Nothing\Mossel-or-Nothing\sass\index.scss\A \A 4: i,em{font-style:normal;}\A 5: b,strong{font-weight:100;}\A 6: h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:100;}\A 7: img{border:0;display:block;}\A 8: .clearfix:after{content:\".\";clear:both;height:0;visibility:hidden;overflow:hidden;display:block;}\A 9: /*公共头部*/\A 10: #header{\A 11:     width:100%;\A 12:     .top-content{\A 13:         width: 100%;\A 14:         font-size: 12px;"; }
+a, u {
+  text-decoration: none; }
+
+i, em {
+  font-style: normal; }
+
+b, strong {
+  font-weight: 100; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: 100; }
+
+img {
+  border: 0;
+  display: block; }
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  display: block; }
+
+/*公共头部*/
+.header {
+  width: 100%; }
+  .header .top-content {
+    width: 100%;
+    font-size: 12px;
+    color: #666;
+    background: #F4F4F4;
+    border-bottom: 2px solid #F4F4F4; }
+    .header .top-content .top {
+      width: 1120px;
+      margin: 0px auto; }
+      .header .top-content .top .login-0 {
+        width: 1120px;
+        height: 24px;
+        background: #F4F4F4;
+        padding-top: 12px; }
+        .header .top-content .top .login-0 .title {
+          width: 100px;
+          float: left; }
+        .header .top-content .top .login-0 .main-unlogin {
+          float: right; }
+          .header .top-content .top .login-0 .main-unlogin a {
+            padding: 0 8px;
+            float: right;
+            font-size: 13px; }
+            .header .top-content .top .login-0 .main-unlogin a .icon-weibo {
+              color: #d92a4b;
+              font-size: 14px; }
+            .header .top-content .top .login-0 .main-unlogin a .icon-weixin {
+              color: #6bb305;
+              font-size: 20px;
+              line-height: 17px; }
+          .header .top-content .top .login-0 .main-unlogin .card, .header .top-content .top .login-0 .main-unlogin .weibo {
+            border-right: 1px solid #dddddd; }
+        .header .top-content .top .login-0 .cart-unlogin {
+          float: right;
+          font-size: 13px; }
+          .header .top-content .top .login-0 .cart-unlogin .cart-txt {
+            line-height: 17px;
+            margin: 0 3px; }
+            .header .top-content .top .login-0 .cart-unlogin .cart-txt .icon-shop {
+              margin: 0 3px; }
+            .header .top-content .top .login-0 .cart-unlogin .cart-txt b {
+              font-weight: 900;
+              color: #d92a4b; }
+        .header .top-content .top .login-0 .register {
+          float: right;
+          font-size: 13px;
+          padding: 0 8px;
+          border-left: 1px solid #dddddd;
+          margin-right: 20px; }
+        .header .top-content .top .login-0 .login {
+          float: right;
+          font-size: 13px;
+          padding: 0 8px; }
+  .header .logo-content {
+    width: 100%;
+    background: #ffffff;
+    height: 115px; }
+    .header .logo-content .logo {
+      width: 1120px;
+      height: 90px;
+      padding-top: 25px;
+      margin: 0 auto; }
+      .header .logo-content .logo .logopic {
+        float: left;
+        width: 328px; }
+        .header .logo-content .logo .logopic img {
+          width: 328px; }
+    .header .logo-content .search {
+      float: right;
+      margin-top: 21px;
+      width: 294px;
+      height: 45px;
+      border: 1px solid #e2e2e2;
+      border-radius: 50px;
+      position: relative; }
+      .header .logo-content .search .search-txt {
+        position: absolute;
+        top: 1px;
+        left: 20px;
+        border: none;
+        padding: 11px 0;
+        width: 230px;
+        height: 20px; }
+      .header .logo-content .search .submit {
+        position: absolute;
+        top: 0;
+        left: 250px;
+        line-height: 40px;
+        font-size: 30px; }
+  .header .nav-content {
+    width: 100%;
+    height: 44px;
+    border-bottom: 2px solid #333333;
+    position: relative;
+    background: #ffffff; }
+    .header .nav-content .nav {
+      width: 1130px;
+      margin: 0 auto; }
+      .header .nav-content .nav .nav-item {
+        float: left;
+        text-align: center;
+        margin: 0 15px; }
+        .header .nav-content .nav .nav-item a {
+          display: block;
+          line-height: 43px;
+          font-size: 16px;
+          padding: 0 15px;
+          color: #333333; }
+      .header .nav-content .nav .nav-item:hover {
+        border-bottom: 3px solid #d92a4b; }
+      .header .nav-content .nav .cur {
+        border-bottom: 3px solid #d92a4b; }
+        .header .nav-content .nav .cur a {
+          color: #d92a4b; }
+
+/*公共尾部*/
+#body {
+  width: 100%; }
+  #body .banner-content {
+    width: 100%;
+    height: 450px;
+    overflow: hidden; }
+    #body .banner-content .banner {
+      width: 1120px;
+      margin: 0 auto;
+      position: relative; }
+      #body .banner-content .banner .banner-list {
+        float: left;
+        position: absolute;
+        top: 0;
+        left: -400px; }
+        #body .banner-content .banner .banner-list .banner-item {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0; }
+        #body .banner-content .banner .banner-list .star {
+          opacity: 1; }
+
+/*# sourceMappingURL=index.css.map */
