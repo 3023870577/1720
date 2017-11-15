@@ -42,8 +42,34 @@ define([
         $banner.mouseleave(function () {
             timer = setInterval(autoplay,2000);
             $smallBan.stop().animate({ "opacity": "0" }, 1000);
+        })       
+    })
+    $(function(){
+        var $leftBtn = $(".left-btn");
+        var $rightBtn = $(".right-btn");
+        var $hotList = $(".hot-list");  
+        //右按钮 点击时让图片左移1120px(当前left值减去要移动的距离)
+        $rightBtn.click(function(){
+            // alert("hhhh"); 
+            var $left = parseInt($hotList.css("left"));
+            var $width = parseInt($(".hot-item").eq(0).innerWidth());
+            if(Math.abs($left) >= 2280){
+                $hotList.css("left","$left");
+            }else{
+                $hotList.animate({"left":$left - ($width * 4) + "px"},1000);
+            }     
         })
-        
+        //左按钮 点击时让图片右移1120px
+        $leftBtn.click(function(){
+            var $left = parseInt($hotList.css("left"));
+            var $width = parseInt($(".hot-item").eq(0).innerWidth());
+            if($left >= 0){
+                $hotList.css("left", "$left");
+            }else{
+                $hotList.animate({ "left":$left + ($width*4) + "px"},1000);
+            }
+            
+        })
     })
 });
 

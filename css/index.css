@@ -225,18 +225,28 @@ img {
   #body .hot-content {
     width: 100%;
     position: relative; }
+    #body .hot-content .left-btn {
+      position: absolute;
+      top: 204px;
+      left: 20px;
+      z-index: 10; }
+      #body .hot-content .left-btn .icon-jiantouzuo {
+        font-size: 40px;
+        color: #e5cda7; }
+    #body .hot-content .right-btn {
+      position: absolute;
+      top: 204px;
+      right: 20px;
+      z-index: 10; }
+      #body .hot-content .right-btn .icon-jiantouyou {
+        font-size: 40px;
+        color: #e5cda7; }
     #body .hot-content .hot {
       width: 1120px;
+      height: 464px;
       margin: 0 auto;
-      overflow: hidden; }
-      #body .hot-content .hot .left-btn {
-        position: absolute;
-        top: 204px;
-        left: 16px; }
-      #body .hot-content .hot .right-btn {
-        position: absolute;
-        top: 204px;
-        right: 16px; }
+      overflow: hidden;
+      position: relative; }
       #body .hot-content .hot h2 {
         height: 40px;
         line-height: 40px;
@@ -248,7 +258,9 @@ img {
           font-size: 16px;
           margin-left: 10px; }
       #body .hot-content .hot .hot-list {
-        width: 10000px; }
+        width: 10000px;
+        position: absolute;
+        left: 0; }
         #body .hot-content .hot .hot-list .hot-item {
           float: left;
           width: 265px;
@@ -262,9 +274,6 @@ img {
             #body .hot-content .hot .hot-list .hot-item .hot-pro img {
               width: 265px;
               height: 265px; }
-            #body .hot-content .hot .hot-list .hot-item .hot-pro img:hover {
-              transform: scale(1.2);
-              transition: all 3s; }
           #body .hot-content .hot .hot-list .hot-item .hot-pro-info {
             width: 265px;
             height: 97px; }

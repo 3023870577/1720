@@ -97,21 +97,33 @@
     .hot-content{
         width: 100%;
         position: relative;
+        //左右按钮
+        .left-btn{
+            position: absolute;
+            top: 204px;
+            left: 20px;
+            z-index: 10;
+            .icon-jiantouzuo{
+                font-size: 40px;
+                color: #e5cda7;
+            }
+        }
+        .right-btn{
+            position: absolute;
+            top: 204px;
+            right: 20px;
+            z-index: 10;
+            .icon-jiantouyou{
+                font-size: 40px;
+                color: #e5cda7;
+            }
+        }
         .hot{
             width:1120px;
+            height:464px;
             margin: 0 auto;
             overflow: hidden;
-            
-            .left-btn{
-                position: absolute;
-                top: 204px;
-                left: 16px;
-            }
-            .right-btn{
-                position: absolute;
-                top: 204px;
-                right: 16px;
-            }
+            position: relative;
             h2{
                 height:40px;
                 line-height:40px;
@@ -126,6 +138,8 @@
             }
             .hot-list{
                 width:10000px;
+                position: absolute;
+                left: 0;
                 .hot-item{
                     float: left;
                     width:265px;
@@ -139,10 +153,6 @@
                         img{
                             width: 265px;
                             height: 265px;
-                        }
-                        img:hover{
-                            transform: scale(1.2);
-                            transition: all 3s;
                         }
                     }
                     .hot-pro-info{
