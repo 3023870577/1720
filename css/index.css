@@ -158,6 +158,7 @@ img {
     overflow: hidden; }
     #body .banner-content .banner {
       width: 1120px;
+      height: 450px;
       margin: 0 auto;
       position: relative; }
       #body .banner-content .banner .banner-list {
@@ -172,5 +173,127 @@ img {
           opacity: 0; }
         #body .banner-content .banner .banner-list .star {
           opacity: 1; }
+      #body .banner-content .banner .small-banner {
+        position: absolute;
+        bottom: 0;
+        left: -400px;
+        width: 1920px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 30;
+        visibility: visible;
+        opacity: 0; }
+        #body .banner-content .banner .small-banner .small-banner-list {
+          height: 80px;
+          margin: 0 auto;
+          text-align: center;
+          z-index: 30; }
+          #body .banner-content .banner .small-banner .small-banner-list .small-banner-item {
+            display: inline-block;
+            width: 153px;
+            height: 66px;
+            position: relative;
+            margin: 7px 3px;
+            overflow: hidden;
+            opacity: 0.5; }
+            #body .banner-content .banner .small-banner .small-banner-list .small-banner-item img {
+              width: 153px;
+              height: 66px; }
+          #body .banner-content .banner .small-banner .small-banner-list .star {
+            opacity: 1; }
+  #body .title-content {
+    width: 100%;
+    height: 78px; }
+    #body .title-content .title {
+      margin: 0 auto;
+      width: 1120px; }
+      #body .title-content .title .title-list {
+        width: 1120px;
+        height: 56px;
+        padding-top: 22px; }
+        #body .title-content .title .title-list .title-item {
+          float: left;
+          width: 33%;
+          line-height: 56px;
+          text-align: center; }
+          #body .title-content .title .title-list .title-item .title-txt, #body .title-content .title .title-list .title-item .icon {
+            float: left; }
+          #body .title-content .title .title-list .title-item .icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 4px 0 110px; }
+  #body .hot-content {
+    width: 100%;
+    position: relative; }
+    #body .hot-content .hot {
+      width: 1120px;
+      margin: 0 auto;
+      overflow: hidden; }
+      #body .hot-content .hot .left-btn {
+        position: absolute;
+        top: 204px;
+        left: 16px; }
+      #body .hot-content .hot .right-btn {
+        position: absolute;
+        top: 204px;
+        right: 16px; }
+      #body .hot-content .hot h2 {
+        height: 40px;
+        line-height: 40px;
+        padding: 20px 0 15px 0;
+        font-size: 24px;
+        color: #333333; }
+        #body .hot-content .hot h2 span {
+          color: #999999;
+          font-size: 16px;
+          margin-left: 10px; }
+      #body .hot-content .hot .hot-list {
+        width: 10000px; }
+        #body .hot-content .hot .hot-list .hot-item {
+          float: left;
+          width: 265px;
+          height: 389px;
+          text-align: center;
+          padding: 0 20px 20px 0; }
+          #body .hot-content .hot .hot-list .hot-item .hot-pro {
+            width: 265px;
+            height: 265px;
+            overflow: hidden; }
+            #body .hot-content .hot .hot-list .hot-item .hot-pro img {
+              width: 265px;
+              height: 265px; }
+            #body .hot-content .hot .hot-list .hot-item .hot-pro img:hover {
+              transform: scale(1.2);
+              transition: all 3s; }
+          #body .hot-content .hot .hot-list .hot-item .hot-pro-info {
+            width: 265px;
+            height: 97px; }
+            #body .hot-content .hot .hot-list .hot-item .hot-pro-info .hot-pro-name {
+              margin: 10px 0 5px;
+              font-size: 15px; }
+              #body .hot-content .hot .hot-list .hot-item .hot-pro-info .hot-pro-name a {
+                display: block;
+                color: #333333;
+                padding: 0 10px;
+                line-height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+            #body .hot-content .hot .hot-list .hot-item .hot-pro-info .hot-pro-instro {
+              font-size: 14px;
+              color: #999999;
+              display: block;
+              padding: 0 10px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            #body .hot-content .hot .hot-list .hot-item .hot-pro-info .hot-pro-price {
+              margin: 0 auto;
+              margin-top: 20px;
+              height: 42px;
+              line-height: 42px;
+              width: 160px;
+              color: #d92a4b;
+              border-top: 1px solid #999999; }
 
 /*# sourceMappingURL=index.css.map */
