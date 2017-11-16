@@ -194,4 +194,368 @@
             }
         }
     }
+    // 第二层美酒部分
+    .wine-content{
+        width:100%;
+        background: #f4f4f4;
+        .wine{
+            width:1120px;
+            margin:0 auto;
+            overflow: hidden;
+            // 标题
+            h2{
+                float: left;
+                width: 400px;
+                height:40px;
+                line-height:40px;
+                padding: 20px 0 15px 0;
+                font-size: 24px;
+                color: #333333;
+                span{
+                    color: #999999;
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+            }
+            // 商品分类
+            .wine-classify-list{
+                float: right;
+                height: 30px;
+                line-height: 40px;
+                margin: 35px 0 10px;
+                .wine-classify{
+                    float: left;
+                    padding-bottom: 8px;
+                    margin: 0 0 0 15px;
+                    padding: 0 0 5px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .wine-cur{
+                    color: #d92a4b;
+                    border-bottom: 2px solid #d92a4b;
+                }
+            }
+            //商品列表
+            .wine-list-content{
+                width:100%;
+                overflow: hidden;
+                .wine-list{
+                    width: 1140px;
+                    overflow: hidden;
+                    .wine-item{
+                        float: left;
+                        width:265px;
+                        height: 389px;
+                        text-align: center;
+                        margin: 0 20px 20px 0;
+                        background: #ffffff;
+                        .wine-pro{
+                            width: 265px;
+                            height: 265px;
+                            overflow: hidden;
+                            img{
+                                width: 265px;
+                                height: 265px;
+                            }
+                        }
+                        .wine-pro-info{
+                            width:265px;
+                            height:97px;
+                            .wine-pro-name{
+                                margin: 10px 0 5px;
+                                font-size: 15px;
+                                a{
+                                    display: block;
+                                    color: #333333;
+                                    padding: 0 10px;
+                                    line-height: 24px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            } 
+                            .wine-pro-instro{
+                                font-size: 14px;
+                                color: #999999;
+                                display: block;
+                                padding: 0 10px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            .wine-pro-price{
+                                margin: 0 auto;
+                                margin-top: 20px;
+                                height:42px;
+                                line-height: 42px;
+                                width:160px;
+                                color: #d92a4b;
+                                border-top: 1px solid #999999;
+                            }
+                        }
+                    }
+                }
+            }
+            .block{
+                display: block;
+            }
+            .none{
+                display: none;
+            }
+            // 查看更多
+            .more{
+                width: 138px;
+                height: 50px;
+                border:1px solid #999999;
+                margin: 30px auto;
+                background: #ffffff;
+                .more-btn{
+                    display: block;
+                    width: 138px;
+                    height: 50px;
+                    border:1px solid #999999;
+                    background: #ffffff;
+                    color: #333333;
+                    margin: -5px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    // 三层良食部分
+    .goods-content{
+        width: 100%;
+        background: #f4f4f4;
+        .goods{
+            margin: 0 auto;
+            width:1120px;
+           overflow: hidden;
+            h2{
+                height:40px;
+                line-height:40px;
+                padding: 20px 0 15px 0;
+                font-size: 24px;
+                color: #333333;
+                span{
+                    color: #999999;
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+            }
+            .goods-list{
+                width: 1140px;
+                overflow: hidden;
+                .goods-item{
+                    float: left;
+                    width:265px;
+                    height: 389px;
+                    text-align: center;
+                    margin: 0 20px 20px 0;
+                    background: #ffffff;
+                    .goods-pro{
+                        width: 265px;
+                        height: 265px;
+                        overflow: hidden;
+                        img{
+                            width: 265px;
+                            height: 265px;
+                        }
+                    }
+                    .goods-pro-info{
+                        width:265px;
+                        height:97px;
+                        .goods-pro-name{
+                            margin: 10px 0 5px;
+                            font-size: 15px;
+                            a{
+                                display: block;
+                                color: #333333;
+                                padding: 0 10px;
+                                line-height: 24px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        } 
+                        .goods-pro-instro{
+                            font-size: 14px;
+                            color: #999999;
+                            display: block;
+                            padding: 0 10px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .goods-pro-price{
+                            margin: 0 auto;
+                            margin-top: 20px;
+                            height:42px;
+                            line-height: 42px;
+                            width:160px;
+                            color: #d92a4b;
+                            border-top: 1px solid #999999;
+                        }
+                    }
+                }
+            }
+            // 查看更多
+            .more{
+                width: 138px;
+                height: 50px;
+                border:1px solid #999999;
+                margin: 30px auto;
+                background: #ffffff;
+                .more-btn{
+                    display: block;
+                    width: 138px;
+                    height: 50px;
+                    border:1px solid #999999;
+                    background: #ffffff;
+                    color: #333333;
+                    margin: -5px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    // 第五层专题
+    .topic-content{
+        width: 100%;
+        background: #f4f4f4;
+        .topic{
+            margin: 0 auto;
+            width:1120px;
+           overflow: hidden;
+            h2{
+                height:40px;
+                line-height:40px;
+                padding: 20px 0 15px 0;
+                font-size: 24px;
+                color: #333333;
+                span{
+                    color: #999999;
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+            }
+            .topic-list{
+                width: 1140px;
+                overflow: hidden;
+                .topic-item{
+                    float: left;
+                    width: 360px;
+                    height:300px;
+                    margin: 0 20px 20px 0;
+                }
+            } 
+        }
+    }
+    //第六层taste
+    .taste-content{
+        width:100%;
+        background: #f4f4f4;
+        .taste{
+            width: 1120px;
+            margin: 0 auto;
+            overflow: hidden;
+            h2{
+                height:40px;
+                line-height:40px;
+                padding: 20px 0 15px 0;
+                font-size: 24px;
+                color: #333333;
+                span{
+                    color: #999999;
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+            }
+            .taste-list{
+                width: 1140px;
+                overflow: hidden;
+                .taste-item{
+                    float: left;
+                    margin: 0 20px 20px 0;
+                    width:265px;
+                    background: #ffffff;
+                    img{
+                        width:265px;
+                        height: 265px;
+                    }
+                    .taste-pro-info{
+                        padding: 0 15px 15px; 
+                        a{
+                            font-size: 20px;
+                            color: #333333;
+                            display: block;
+                            line-height: 40px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .taste-pro-instro{
+                            font-size: 14px;
+                            height: 42px;
+                            line-height: 20px;
+                            color: #999999;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .taste-pro-price{
+                            margin-top: 20px;
+                            overflow: hidden;
+                            img{
+                                float: left;
+                                width: 34px;
+                                height: 34px;
+                                border-radius: 50%;
+                            }
+                            span{
+                                font-size: 14px;
+                                color: #666666;
+                                margin: 6px 0 0 44px;
+                                display: block;
+                                line-height: 20px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+                .large{
+                    width: 550px;
+                    img{
+                        width: 550px;
+                    }
+                }
+            }
+            //查看更多
+            .more{
+                width: 138px;
+                height: 50px;
+                border:1px solid #999999;
+                margin: 30px auto;
+                background: #ffffff;
+                .more-btn{
+                    display: block;
+                    width: 138px;
+                    height: 50px;
+                    border:1px solid #999999;
+                    background: #ffffff;
+                    color: #333333;
+                    margin: -5px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }

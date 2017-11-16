@@ -161,3 +161,87 @@ img{border:0;display:block;}
     }
 }
 /*公共尾部*/
+.footer{
+    width: 100%;
+    .foot-link{
+        width:1120px;
+        margin: 0 auto;
+        padding: 30px 0;
+        border-bottom: 1px solid #eeeeee;
+        .link-list{
+            float: left;
+            margin-right: 90px;
+            .link-title{
+                width: 58px;
+                border-bottom: 1px solid #eeeeee;
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                a{
+                    font-size: 14px;
+                    color: #333333;
+                }
+            }
+            .link-item{
+                a{
+                    font-size: 14px;
+                    color: #999999;
+                    line-height: 30px;
+                }
+            }
+        }
+        .fw{
+            float: right;
+            h2{
+                font-size: 28px;
+                margin: 15px 0 ;
+            }
+            span{
+                font-size: 14px;
+                color: #333333;
+            }   
+        }
+    }
+    .e-mail{
+        width: 1120px;
+        height: 102px;
+        margin: 0 auto;
+        padding: 36px 10px;
+        p{
+            font-size: 14px;
+            color: #666666;
+            line-height: 24px;
+            .icon-mail{
+                color: #d92a4b;
+                font-size: 24px;
+                margin-right: 5px;
+            }
+        }
+        .emailsubs{
+            width: 450px;
+            input{
+                width: 220px;
+                height: 56px;
+                line-height: 56px;
+                margin-top: 20px;
+                padding-left: 15px;
+                border: 1px solid #eeeeee;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                border-radius: 3px 0 0 3px;
+                outline: 0; 
+            }
+            button{
+                width: 90px;
+                height: 60px;
+                line-height: 56px;
+                color: #ffffff;
+                border-radius: 0 3px 3px 0;
+                background: #d92a4b;
+                border: none;
+                outline: 0;
+                margin-left: -5px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

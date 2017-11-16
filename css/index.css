@@ -150,6 +150,74 @@ img {
           color: #d92a4b; }
 
 /*公共尾部*/
+.footer {
+  width: 100%; }
+  .footer .foot-link {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee; }
+    .footer .foot-link .link-list {
+      float: left;
+      margin-right: 90px; }
+      .footer .foot-link .link-list .link-title {
+        width: 58px;
+        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 5px;
+        padding-bottom: 5px; }
+        .footer .foot-link .link-list .link-title a {
+          font-size: 14px;
+          color: #333333; }
+      .footer .foot-link .link-list .link-item a {
+        font-size: 14px;
+        color: #999999;
+        line-height: 30px; }
+    .footer .foot-link .fw {
+      float: right; }
+      .footer .foot-link .fw h2 {
+        font-size: 28px;
+        margin: 15px 0; }
+      .footer .foot-link .fw span {
+        font-size: 14px;
+        color: #333333; }
+  .footer .e-mail {
+    width: 1120px;
+    height: 102px;
+    margin: 0 auto;
+    padding: 36px 10px; }
+    .footer .e-mail p {
+      font-size: 14px;
+      color: #666666;
+      line-height: 24px; }
+      .footer .e-mail p .icon-mail {
+        color: #d92a4b;
+        font-size: 24px;
+        margin-right: 5px; }
+    .footer .e-mail .emailsubs {
+      width: 450px; }
+      .footer .e-mail .emailsubs input {
+        width: 220px;
+        height: 56px;
+        line-height: 56px;
+        margin-top: 20px;
+        padding-left: 15px;
+        border: 1px solid #eeeeee;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-radius: 3px 0 0 3px;
+        outline: 0; }
+      .footer .e-mail .emailsubs button {
+        width: 90px;
+        height: 60px;
+        line-height: 56px;
+        color: #ffffff;
+        border-radius: 0 3px 3px 0;
+        background: #d92a4b;
+        border: none;
+        outline: 0;
+        margin-left: -5px;
+        margin-top: 20px; }
+
 #body {
   width: 100%; }
   #body .banner-content {
@@ -304,5 +372,300 @@ img {
               width: 160px;
               color: #d92a4b;
               border-top: 1px solid #999999; }
+  #body .wine-content {
+    width: 100%;
+    background: #f4f4f4; }
+    #body .wine-content .wine {
+      width: 1120px;
+      margin: 0 auto;
+      overflow: hidden; }
+      #body .wine-content .wine h2 {
+        float: left;
+        width: 400px;
+        height: 40px;
+        line-height: 40px;
+        padding: 20px 0 15px 0;
+        font-size: 24px;
+        color: #333333; }
+        #body .wine-content .wine h2 span {
+          color: #999999;
+          font-size: 16px;
+          margin-left: 10px; }
+      #body .wine-content .wine .wine-classify-list {
+        float: right;
+        height: 30px;
+        line-height: 40px;
+        margin: 35px 0 10px; }
+        #body .wine-content .wine .wine-classify-list .wine-classify {
+          float: left;
+          padding-bottom: 8px;
+          margin: 0 0 0 15px;
+          padding: 0 0 5px;
+          font-size: 14px;
+          line-height: 18px; }
+        #body .wine-content .wine .wine-classify-list .wine-cur {
+          color: #d92a4b;
+          border-bottom: 2px solid #d92a4b; }
+      #body .wine-content .wine .wine-list-content {
+        width: 100%;
+        overflow: hidden; }
+        #body .wine-content .wine .wine-list-content .wine-list {
+          width: 1140px;
+          overflow: hidden; }
+          #body .wine-content .wine .wine-list-content .wine-list .wine-item {
+            float: left;
+            width: 265px;
+            height: 389px;
+            text-align: center;
+            margin: 0 20px 20px 0;
+            background: #ffffff; }
+            #body .wine-content .wine .wine-list-content .wine-list .wine-item .wine-pro {
+              width: 265px;
+              height: 265px;
+              overflow: hidden; }
+              #body .wine-content .wine .wine-list-content .wine-list .wine-item .wine-pro img {
+                width: 265px;
+                height: 265px; }
+            #body .wine-content .wine .wine-list-content .wine-list .wine-item .wine-pro-info {
+              width: 265px;
+              height: 97px; }
+              #body .wine-content .wine .wine-list-content .wine-list .wine-item .wine-pro-info .wine-pro-name {
+                margin: 10px 0 5px;
+                font-size: 15px; }
+                #body .wine-content .wine .wine-list-content .wine-list .wine-item .wine-pro-info .wine-pro-name a {
+                  display: block;
+                  color: #333333;
+                  padding: 0 10px;
+                  line-height: 24px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap; }
+              #body .wine-content .wine .wine-list-content .wine-list .wine-item .wine-pro-info .wine-pro-instro {
+                font-size: 14px;
+                color: #999999;
+                display: block;
+                padding: 0 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+              #body .wine-content .wine .wine-list-content .wine-list .wine-item .wine-pro-info .wine-pro-price {
+                margin: 0 auto;
+                margin-top: 20px;
+                height: 42px;
+                line-height: 42px;
+                width: 160px;
+                color: #d92a4b;
+                border-top: 1px solid #999999; }
+      #body .wine-content .wine .block {
+        display: block; }
+      #body .wine-content .wine .none {
+        display: none; }
+      #body .wine-content .wine .more {
+        width: 138px;
+        height: 50px;
+        border: 1px solid #999999;
+        margin: 30px auto;
+        background: #ffffff; }
+        #body .wine-content .wine .more .more-btn {
+          display: block;
+          width: 138px;
+          height: 50px;
+          border: 1px solid #999999;
+          background: #ffffff;
+          color: #333333;
+          margin: -5px;
+          text-align: center;
+          line-height: 50px;
+          font-size: 14px; }
+  #body .goods-content {
+    width: 100%;
+    background: #f4f4f4; }
+    #body .goods-content .goods {
+      margin: 0 auto;
+      width: 1120px;
+      overflow: hidden; }
+      #body .goods-content .goods h2 {
+        height: 40px;
+        line-height: 40px;
+        padding: 20px 0 15px 0;
+        font-size: 24px;
+        color: #333333; }
+        #body .goods-content .goods h2 span {
+          color: #999999;
+          font-size: 16px;
+          margin-left: 10px; }
+      #body .goods-content .goods .goods-list {
+        width: 1140px;
+        overflow: hidden; }
+        #body .goods-content .goods .goods-list .goods-item {
+          float: left;
+          width: 265px;
+          height: 389px;
+          text-align: center;
+          margin: 0 20px 20px 0;
+          background: #ffffff; }
+          #body .goods-content .goods .goods-list .goods-item .goods-pro {
+            width: 265px;
+            height: 265px;
+            overflow: hidden; }
+            #body .goods-content .goods .goods-list .goods-item .goods-pro img {
+              width: 265px;
+              height: 265px; }
+          #body .goods-content .goods .goods-list .goods-item .goods-pro-info {
+            width: 265px;
+            height: 97px; }
+            #body .goods-content .goods .goods-list .goods-item .goods-pro-info .goods-pro-name {
+              margin: 10px 0 5px;
+              font-size: 15px; }
+              #body .goods-content .goods .goods-list .goods-item .goods-pro-info .goods-pro-name a {
+                display: block;
+                color: #333333;
+                padding: 0 10px;
+                line-height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+            #body .goods-content .goods .goods-list .goods-item .goods-pro-info .goods-pro-instro {
+              font-size: 14px;
+              color: #999999;
+              display: block;
+              padding: 0 10px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            #body .goods-content .goods .goods-list .goods-item .goods-pro-info .goods-pro-price {
+              margin: 0 auto;
+              margin-top: 20px;
+              height: 42px;
+              line-height: 42px;
+              width: 160px;
+              color: #d92a4b;
+              border-top: 1px solid #999999; }
+      #body .goods-content .goods .more {
+        width: 138px;
+        height: 50px;
+        border: 1px solid #999999;
+        margin: 30px auto;
+        background: #ffffff; }
+        #body .goods-content .goods .more .more-btn {
+          display: block;
+          width: 138px;
+          height: 50px;
+          border: 1px solid #999999;
+          background: #ffffff;
+          color: #333333;
+          margin: -5px;
+          text-align: center;
+          line-height: 50px;
+          font-size: 14px; }
+  #body .topic-content {
+    width: 100%;
+    background: #f4f4f4; }
+    #body .topic-content .topic {
+      margin: 0 auto;
+      width: 1120px;
+      overflow: hidden; }
+      #body .topic-content .topic h2 {
+        height: 40px;
+        line-height: 40px;
+        padding: 20px 0 15px 0;
+        font-size: 24px;
+        color: #333333; }
+        #body .topic-content .topic h2 span {
+          color: #999999;
+          font-size: 16px;
+          margin-left: 10px; }
+      #body .topic-content .topic .topic-list {
+        width: 1140px;
+        overflow: hidden; }
+        #body .topic-content .topic .topic-list .topic-item {
+          float: left;
+          width: 360px;
+          height: 300px;
+          margin: 0 20px 20px 0; }
+  #body .taste-content {
+    width: 100%;
+    background: #f4f4f4; }
+    #body .taste-content .taste {
+      width: 1120px;
+      margin: 0 auto;
+      overflow: hidden; }
+      #body .taste-content .taste h2 {
+        height: 40px;
+        line-height: 40px;
+        padding: 20px 0 15px 0;
+        font-size: 24px;
+        color: #333333; }
+        #body .taste-content .taste h2 span {
+          color: #999999;
+          font-size: 16px;
+          margin-left: 10px; }
+      #body .taste-content .taste .taste-list {
+        width: 1140px;
+        overflow: hidden; }
+        #body .taste-content .taste .taste-list .taste-item {
+          float: left;
+          margin: 0 20px 20px 0;
+          width: 265px;
+          background: #ffffff; }
+          #body .taste-content .taste .taste-list .taste-item img {
+            width: 265px;
+            height: 265px; }
+          #body .taste-content .taste .taste-list .taste-item .taste-pro-info {
+            padding: 0 15px 15px; }
+            #body .taste-content .taste .taste-list .taste-item .taste-pro-info a {
+              font-size: 20px;
+              color: #333333;
+              display: block;
+              line-height: 40px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            #body .taste-content .taste .taste-list .taste-item .taste-pro-info .taste-pro-instro {
+              font-size: 14px;
+              height: 42px;
+              line-height: 20px;
+              color: #999999;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            #body .taste-content .taste .taste-list .taste-item .taste-pro-info .taste-pro-price {
+              margin-top: 20px;
+              overflow: hidden; }
+              #body .taste-content .taste .taste-list .taste-item .taste-pro-info .taste-pro-price img {
+                float: left;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%; }
+              #body .taste-content .taste .taste-list .taste-item .taste-pro-info .taste-pro-price span {
+                font-size: 14px;
+                color: #666666;
+                margin: 6px 0 0 44px;
+                display: block;
+                line-height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+        #body .taste-content .taste .taste-list .large {
+          width: 550px; }
+          #body .taste-content .taste .taste-list .large img {
+            width: 550px; }
+      #body .taste-content .taste .more {
+        width: 138px;
+        height: 50px;
+        border: 1px solid #999999;
+        margin: 30px auto;
+        background: #ffffff; }
+        #body .taste-content .taste .more .more-btn {
+          display: block;
+          width: 138px;
+          height: 50px;
+          border: 1px solid #999999;
+          background: #ffffff;
+          color: #333333;
+          margin: -5px;
+          text-align: center;
+          line-height: 50px;
+          font-size: 14px; }
 
 /*# sourceMappingURL=index.css.map */
