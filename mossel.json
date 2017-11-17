@@ -65,6 +65,39 @@
             "wine-5-2.jpg",
             "wine-5-3.jpg",
             "wine-5-4.jpg"
+        ],
+        "goods":[
+            "goods-1.jpg",
+            "goods-2.jpg",
+            "goods-3.jpg",
+            "goods-4.jpg",
+            "goods-5.jpg",
+            "goods-6.jpg",
+            "goods-7.jpg",
+            "goods-8.jpg"
+        ],
+        "topic":[
+            "topic-1.jpg",
+            "topic-2.jpg",
+            "topic-3.jpg"            
+        ],
+        "dream":[
+            "dream-1.jpg",
+            "dream-2.jpg",
+            "dream-3.jpg",
+            "dream-1-1.jpg",
+            "dream-2-1.jpg",
+            "dream-3-1.jpg"
+        ],
+        "safe":[
+            "ico-safe.png"
+        ],
+        "floatRight":[
+            "right.jpg",
+            "qcode.jpg"
+        ],
+        "nav":[
+            "ico-index.png"
         ]
     },
     "login":{

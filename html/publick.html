@@ -67,12 +67,52 @@
             </div>
         </div>
         <div class="nav-content">
-            <ul class = "nav">
+            <ul class = "nav clearfix">
                 <li class="nav-item cur">
                     <a href="#">首页</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">美酒</a>
+                    <a href="#" class = "Wine">美酒</a>
+                    <div class="wine-warp">
+                        <div class="wine-state">
+                            <h3>国家</h3>
+                            <span class="icon-word"></span>
+                            <p>  
+                                <a href="javascript:;" class = "country">法国</a>
+                                <a href="javascript:;" class = "country">意大利</a>
+                                <a href="javascript:;" class = "country">西班牙</a>
+                                <a href="javascript:;" class = "country">葡萄牙</a>
+                                <a href="javascript:;" class = "country">德国</a>
+                                <a href="javascript:;" class = "country">南非</a>
+                                <a href="javascript:;" class = "country">美国</a>
+                                <a href="javascript:;" class = "country">阿根廷</a>
+                                <a href="javascript:;" class = "country">智利</a>
+                                <a href="javascript:;" class = "country">澳大利亚</a>
+                                <a href="javascript:;" class = "country">中国</a>
+                            </p>
+                        </div>
+                        <div class="wine-type">
+                            <h3>类型</h3>
+                            <ul class = "type-list">
+                                <li class = "type-item">
+                                    <span class = "hong"></span>
+                                    <a href="javascript:;">红葡萄酒</a>
+                                </li> 
+                                <li class="type-item">
+                                    <span class = "bai"></span>
+                                    <a href="javascript:;">白葡萄酒</a>
+                                </li>
+                                <li class="type-item">
+                                    <span class = "qipao"></span>
+                                    <a href="javascript:;">起泡酒</a>
+                                </li>
+                                <li class="type-item">
+                                    <span class = "baijiu"></span>
+                                    <a href="javascript:;">白酒</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="#">良食</a>
@@ -97,7 +137,7 @@
     </div>
     <div class="footer">
         <!-- 友情链接 -->
-        <div class="foot-link clearfix">
+        <div class="footer-link clearfix">
             <dl class="link-list">
                 <dt class="link-title">
                     <a href="#">重要公告</a>
@@ -169,8 +209,9 @@
                 <span>全国服务热线</span>
                 <h2>4008-919-282</h2>
                 <span>
-                     周一到周五以及月末周六：<br>
-                     08:30-12:00，13:30-18:00 <br>
+                    周一到周五以及月末周六：
+                    <br> 08:30-12:00，13:30-18:00
+                    <br>
                 </span>
             </div>
         </div>
@@ -180,13 +221,85 @@
                 <i class="iconfont icon-youjian icon-mail"></i>
                 订阅我们，您可获取更多优惠信息
             </p>
-            <form class = "emailsubs">
+            <form class="emailsubs">
                 <input type="email" name="" placeholder="请输入你的e-mail地址">
                 <button type="button">订阅</button>
             </form>
         </div>
         <!-- 安全 -->
-        
+        <div class="foot-content">
+            <div class="foot">
+                <div class="foot-link">
+                    <a href="#">关于莫塞尔</a>
+                    |
+                    <a href="#">配送范围与运费</a>
+                    |
+                    <a href="#">快递查询</a>
+                    |
+                    <a href="#">联系我们</a>
+                </div>
+                <p>copyright ©2017 华为技术有限公司版权所有 |粤A2-20044005号-13</p>
+                <div class="gov-icon">
+                    <a href="#" class="szwj"></a>
+                    <a href="#" class="baxx"></a>
+                    <a href="#" class="wljc"></a>
+                    <a href="#" class="gswj"></a>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="float-tag">
+        <ul>
+            <li class="first float-right">
+                <a href="javascript:;">
+                    <img src="../image/index-img/right.jpg" alt="">
+                </a>
+    
+            </li>
+            <li class="float-right">
+                <a href="javascript:;">
+                    <i class="iconfont icon-shop"></i>
+                </a>
+                <span class="hide">购物车</span>
+            </li>
+            <li class="float-right">
+                <a href="javascript:;">
+                    <i class="iconfont icon-qiandao"></i>
+                </a>
+                <span class="hide">签到送积分</span>
+            </li>
+            <li class="float-right">
+                <a href="javascript:;">
+                    <i class="iconfont icon-youhuiquan"></i>
+                </a>
+                <span class="hide">我的优惠券</span>
+            </li>
+            <li class="float-right">
+                <a href="javascript:;">
+                    <i class="iconfont icon-zaixiankefu"></i>
+                </a>
+                <span class="hide">在线客服</span>
+            </li>
+        </ul>
+        <ul>
+            <li class="float-right">
+                <a href="javascript:;">
+                    <i class="iconfont icon-erweima6"></i>
+                </a>
+                <span class="span-img hide">
+                    <img src="../image/index-img/qcode.jpg" alt="">
+                </span>
+            </li>
+            <li class="float-right btn">
+                <a href="javascript:;">
+                    <i class="iconfont icon-fanhuidingbu"></i>
+                </a>
+                <span class="hide ">返回顶部</span>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="../js/require.js" data-main="../js/public"></script>
 </body>
+
 </html>

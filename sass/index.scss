@@ -16,12 +16,14 @@
                 float: left;
                 position: absolute;
                 top: 0;
-                left:-400px; 
+                left:-400px;
+                z-index: -10; 
                 .banner-item{
                     position: absolute;
                     top: 0;
                     left: 0; 
                     opacity: 0;
+                    z-index: -10;
                 }
                 //开始时的图片
                 .star{
@@ -139,7 +141,6 @@
             .hot-list{
                 width:10000px;
                 position: absolute;
-                left: 0;
                 .hot-item{
                     float: left;
                     width:265px;
