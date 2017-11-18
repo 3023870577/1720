@@ -127,88 +127,165 @@ img {
     width: 100%;
     height: 44px;
     border-bottom: 2px solid #333333;
-    background: #ffffff; }
-    .header .nav-content .nav {
-      width: 1130px;
-      margin: 0 auto;
-      position: relative; }
-      .header .nav-content .nav .nav-item {
-        float: left;
-        text-align: center;
-        margin: 0 15px; }
-        .header .nav-content .nav .nav-item a {
-          display: block;
-          line-height: 43px;
-          font-size: 16px;
-          padding: 0 15px;
-          color: #333333; }
-        .header .nav-content .nav .nav-item .wine-warp {
-          position: absolute;
-          left: 0;
-          top: -118px;
-          width: 1120px;
-          height: 164px;
-          display: none;
-          padding: 0 15px;
-          background: #ffffff;
-          z-index: -5; }
-          .header .nav-content .nav .nav-item .wine-warp .wine-state {
-            float: left;
-            width: 380px;
-            padding: 26px 15px; }
-            .header .nav-content .nav .nav-item .wine-warp .wine-state h3 {
-              font-size: 16px;
-              color: #333333;
-              margin-bottom: 15px;
-              text-align: left;
-              border-bottom: 1px solid #dddddd; }
-            .header .nav-content .nav .nav-item .wine-warp .wine-state .icon-word {
-              margin: 5px 0 0 5px;
-              float: left;
-              width: 44px;
-              height: 44px;
-              background: url(../image/index-img/ico_index.png) no-repeat -106px 0; }
-            .header .nav-content .nav .nav-item .wine-warp .wine-state p {
-              float: left;
-              width: 326px; }
-              .header .nav-content .nav .nav-item .wine-warp .wine-state p .country {
-                display: block;
-                line-height: 28px;
+    background: #ffffff;
+    position: relative; }
+    .header .nav-content .position-content {
+      height: 44px;
+      background: #ffffff;
+      border-bottom: 2px solid #333333;
+      z-index: 20; }
+      .header .nav-content .position-content .nav {
+        width: 1130px;
+        margin: 0 auto;
+        background: #ffffff; }
+        .header .nav-content .position-content .nav .nav-item {
+          float: left;
+          text-align: center;
+          margin: 0 15px; }
+          .header .nav-content .position-content .nav .nav-item a {
+            display: block;
+            line-height: 41px;
+            font-size: 16px;
+            padding: 0 15px;
+            color: #333333; }
+          .header .nav-content .position-content .nav .nav-item .nav-down {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 46px;
+            z-index: -5;
+            height: 0;
+            overflow: hidden;
+            background: #ffffff; }
+            .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp {
+              width: 1120px;
+              height: 164px;
+              margin: 0 auto;
+              padding: 0 15px;
+              background: #ffffff; }
+              .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state {
                 float: left;
-                font-size: 14px;
-                padding: 0 9px; }
-          .header .nav-content .nav .nav-item .wine-warp .wine-type {
-            float: left;
-            width: 550px;
-            padding: 26px 15px;
-            margin-left: 126px; }
-            .header .nav-content .nav .nav-item .wine-warp .wine-type h3 {
-              font-size: 16px;
-              color: #333333;
-              margin-bottom: 15px;
-              text-align: left;
-              border-bottom: 1px solid #dddddd; }
-            .header .nav-content .nav .nav-item .wine-warp .wine-type .type-list .type-item {
-              float: left;
-              margin-right: 42px; }
-              .header .nav-content .nav .nav-item .wine-warp .wine-type .type-list .type-item span {
+                width: 380px;
+                padding: 26px 15px; }
+                .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state h3 {
+                  font-size: 16px;
+                  color: #333333;
+                  margin-bottom: 15px;
+                  text-align: left;
+                  border-bottom: 1px solid #dddddd; }
+                .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state .icon-word {
+                  margin: 5px 0 0 5px;
+                  float: left;
+                  width: 44px;
+                  height: 44px;
+                  background: url(../image/index-img/ico_index.png) no-repeat -106px 0; }
+                .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state p {
+                  float: left;
+                  width: 326px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state p .country {
+                    display: block;
+                    line-height: 28px;
+                    float: left;
+                    font-size: 14px;
+                    padding: 0 9px; }
+              .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-type {
                 float: left;
-                width: 26px;
-                height: 47px;
-                background: url(../image/index-img/ico_index.png) no-repeat 0 0;
-                margin-right: 5px; }
-              .header .nav-content .nav .nav-item .wine-warp .wine-type .type-list .type-item a {
-                float: left;
-                font-size: 14px;
-                color: #666666;
-                padding: 0;
-                line-height: 70px; }
-      .header .nav-content .nav .nav-item:hover {
-        border-bottom: 3px solid #d92a4b; }
-      .header .nav-content .nav .cur {
-        border-bottom: 3px solid #d92a4b; }
-        .header .nav-content .nav .cur a {
-          color: #d92a4b; }
+                width: 550px;
+                padding: 26px 15px;
+                margin-left: 126px; }
+                .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-type h3 {
+                  font-size: 16px;
+                  color: #333333;
+                  margin-bottom: 15px;
+                  text-align: left;
+                  border-bottom: 1px solid #dddddd; }
+                .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-type .type-list .type-item {
+                  float: left;
+                  margin-right: 42px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-type .type-list .type-item span {
+                    float: left;
+                    width: 26px;
+                    height: 47px;
+                    background: url(../image/index-img/ico_index.png) no-repeat 0 0;
+                    margin-right: 5px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-type .type-list .type-item a {
+                    float: left;
+                    font-size: 14px;
+                    color: #666666;
+                    padding: 0;
+                    line-height: 70px; }
+              .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-haowu {
+                margin-left: 130px;
+                padding: 26px 15px; }
+                .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-haowu .icon-card-link {
+                  float: left;
+                  margin: 0 20px;
+                  font-size: 14px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-haowu .icon-card-link .icon-card {
+                    display: block;
+                    width: 44px;
+                    height: 40px;
+                    background: url(../image/index-img/ico_index.png) no-repeat -234px 0; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-haowu .icon-card-link .icon-wineset {
+                    display: block;
+                    width: 44px;
+                    height: 44px;
+                    background: url(../image/index-img/ico_index.png) no-repeat -43px -50px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-haowu .icon-card-link .icon-cooker {
+                    display: block;
+                    width: 41px;
+                    height: 41px;
+                    background: url(../image/index-img/ico_index.png) no-repeat 0 -50px; }
+              .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-faxian {
+                margin-left: 225px;
+                padding: 26px 15px; }
+                .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-faxian .icon-card-link {
+                  float: left;
+                  margin: 0 20px;
+                  font-size: 14px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-faxian .icon-card-link .icon-video {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    background: url(../image/index-img/ico_index.png) no-repeat -177px -43px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-faxian .icon-card-link .icon-topic {
+                    display: block;
+                    width: 38px;
+                    height: 40px;
+                    background: url(../image/index-img/ico_index.png) no-repeat -195px 0; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-faxian .icon-card-link .icon-report {
+                    display: block;
+                    width: 41px;
+                    height: 41px;
+                    background: url(../image/index-img/ico_index.png) no-repeat -219px -42px; }
+              .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-mossel {
+                margin-left: 550px;
+                padding: 26px 15px; }
+                .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-mossel .icon-card-link {
+                  float: left;
+                  margin: 0 20px;
+                  font-size: 14px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-mossel .icon-card-link .icon-brand {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    background: url(../image/index-img/ico_index.png) no-repeat -89px -49px; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-mossel .icon-card-link .icon-tase {
+                    display: block;
+                    width: 41px;
+                    height: 40px;
+                    background: url(../image/index-img/ico_index.png) no-repeat -152px 0; }
+                  .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp .wine-state-mossel .icon-card-link .icon-sel {
+                    display: block;
+                    width: 44px;
+                    height: 40px;
+                    background: url(../image/index-img/ico_index.png) no-repeat -130px -46px; }
+        .header .nav-content .position-content .nav .nav-item:hover {
+          border-bottom: 3px solid #d92a4b; }
+        .header .nav-content .position-content .nav .cur {
+          border-bottom: 3px solid #d92a4b; }
+          .header .nav-content .position-content .nav .cur a {
+            color: #d92a4b; }
 
 /*公共尾部*/
 .footer {

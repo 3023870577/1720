@@ -8,16 +8,34 @@ requirejs(["jquery","pb"], function ($,pb){
     $(function () {
         //ajax方法请求公共的HTML文件
         $("#head").load("publick.html .header",function(){
-            var $wineWrap = $(".wine-warp");
-            var $winetit = $(".Wine");
+            var $wineWrap = $(".nav-down");
+            var $winetit = $(".nav-down-con");
             $winetit.mouseenter(function(){
-                $wineWrap.css({"display":"block"}).animate({"top":"46px"})
+                $(this).find($(".nav-down")).stop().css({ "z-index": "5" }).animate({ "height": "164px" },500);
             })
+            $wineWrap.mouseenter(function () {
+                $(this).stop().css({ "z-index": "5" }).animate({ "height": "164px" }, 500);
+            })
+            $wineWrap.mouseleave(function () { 
+                $wineWrap.stop().animate({ "height": "0" }, 500);
+            })
+            $winetit.mouseleave(function () {
+                $wineWrap.stop().animate({ "height": "0" }, 500);
+            })
+            // 顶部悬浮
+            $(window).scroll(function(){
+                var $top = $(document).scrollTop();
+                 console.log($top);
+                var $nav = $(".position-content");
+                if($top >= 200){
+                    $nav.css({"position":"fixed","top":"0","width":"100%"});
+                }else{
+                    $nav.css({ "position": "relative", "top": "null", "width": "100%" })
+                }
+            })            
         });
-        // $(".banner").click(function(){
-        //     alert("哈哈哈哈");
-        // })
-        var timer = setInterval(autoplay, 2000);
+        // 轮播图
+        var timer = setInterval(autoplay, 3000);
         var index = 0;
         var $banList = $(".banner-list");
         var $banItem = $(".banner-item");
@@ -26,18 +44,18 @@ requirejs(["jquery","pb"], function ($,pb){
         var $banner = $(".banner");
         //定时器
         function autoplay() {
-            console.log(index);
+            //console.log(index);
             index++;
             if (index == $banItem.size()) {
                 index = 0;
             }
-            $banItem.eq(index).animate({ "opacity": "1" }, 2000).siblings().animate({ "opacity": "0" }, 2000);
+            $banItem.eq(index).animate({ "opacity": "1" }, 1500).siblings().animate({ "opacity": "0" }, 1500);
             $smallBanItem.eq(index).addClass("star").siblings().removeClass("star");
         }
         //鼠标移入移出
         $banner.mouseover(function () {
             clearInterval(timer);
-            $smallBan.stop().animate({ "opacity": "1" }, 2000);
+            $smallBan.stop().animate({ "opacity": "1" }, 1500);
         })
         //鼠标移入图片列表
         $smallBanItem.mouseenter(function () {
@@ -45,12 +63,12 @@ requirejs(["jquery","pb"], function ($,pb){
             // 记录当前图片下标
             index = i;
             $(this).addClass("star").siblings().removeClass("star");
-            $banItem.stop().eq(index).animate({ "opacity": "1" }, 2000).siblings().animate({ "opacity": "0" }, 2000);
+            $banItem.stop().eq(index).animate({ "opacity": "1" }, 1500).siblings().animate({ "opacity": "0" }, 1500);
         })
         // 移出
         $banner.mouseleave(function () {
-            timer = setInterval(autoplay, 2000);
-            $smallBan.stop().animate({ "opacity": "0" }, 2000);
+            timer = setInterval(autoplay, 3000);
+            $smallBan.stop().animate({ "opacity": "0" }, 1500);
         })
     })
     // 人气推荐
