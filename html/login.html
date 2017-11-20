@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
     <title>登录</title>
 </head>
 <body>
-    
+    <div class="head-content">
+        <div class="head">
+            <a href="javascript:;">
+                <img src="../image/login-img/logo.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="body clearfix">
+        <div class="imgcon">
+            <div class="bg">
+                <!-- <img src="../image/login-img/bg.jpg" alt=""> -->
+                <div class="login">
+                    <div class="tit">
+                        <h2>登录</h2>
+                    </div>
+                    <form class="con">
+                        <li class = "form-item">
+                            <input type="text" name="" placeholder="用户名/邮箱地址/手机号" class = "username">
+                            <span class = "err">用户名格式不正确</span>
+                        </li>
+                        <li class = "form-item">
+                            <input type="password" name="" placeholder="请输入密码" class = "password">
+                            <span class = "err">密码不正确</span>
+                        </li>
+                        <li class = "form-item">
+                            <input type="text" name="" placeholder="请输入验证码" class = "writecode">
+                            <span class = "qrcode"><img src="../image/login-img/vcode.html" alt=""></span>
+                            <a href="javascript:;" class = "change">看不清楚？换一个</a>
+                            <span class = "err">验证码不正确</span>
+                        </li>
+                        <li class = "form-item-normal">
+                            <input type="checkbox" name="" class = "check">
+                            <span class = "rem">记住用户名</span>
+                            <a href="javascript:;" class = "norem">忘记密码</a>
+                        </li>
+                        <li class = "form-item-normal">
+                            <button type="button" class="login-btn">登录</button>
+                        </li>
+                    </form>
+                    <div class="need-reg">
+                        <a href="#" class="btn">立即注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-content">
+        <div class="foot">
+            <div class="foot-link">
+                <a href="#">关于莫塞尔</a>
+                |
+                <a href="#">配送范围与运费</a>
+                |
+                <a href="#">快递查询</a>
+                |
+                <a href="#">联系我们</a>
+            </div>
+            <p>copyright ©2017 华为技术有限公司版权所有 |粤A2-20044005号-13</p>
+            <div class="gov-icon">
+                <a href="#" class="szwj"></a>
+                <a href="#" class="baxx"></a>
+                <a href="#" class="wljc"></a>
+                <a href="#" class="gswj"></a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script src="../js/require.js" data-main="../js/login"></script>

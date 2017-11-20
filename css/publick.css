@@ -47,7 +47,8 @@ img {
         width: 1120px;
         height: 24px;
         background: #F4F4F4;
-        padding-top: 12px; }
+        padding-top: 12px;
+        display: block; }
         .header .top-content .top .login-0 .title {
           width: 100px;
           float: left; }
@@ -82,11 +83,45 @@ img {
           font-size: 13px;
           padding: 0 8px;
           border-left: 1px solid #dddddd;
-          margin-right: 20px; }
+          margin-right: 20px;
+          color: #333333; }
         .header .top-content .top .login-0 .login {
           float: right;
           font-size: 13px;
-          padding: 0 8px; }
+          padding: 0 8px;
+          color: #333333; }
+      .header .top-content .top .logined {
+        width: 1120px;
+        height: 24px;
+        background: #F4F4F4;
+        padding-top: 12px;
+        display: none; }
+        .header .top-content .top .logined .title {
+          width: 100px;
+          float: left; }
+        .header .top-content .top .logined .main-logined {
+          float: right; }
+          .header .top-content .top .logined .main-logined a {
+            padding: 0 8px;
+            float: right;
+            font-size: 13px; }
+          .header .top-content .top .logined .main-logined .vip, .header .top-content .top .logined .main-logined .card, .header .top-content .top .logined .main-logined .myorder {
+            border-left: 1px solid #dddddd; }
+        .header .top-content .top .logined .sigout {
+          float: right;
+          font-size: 13px;
+          padding: 0 8px;
+          color: #333333; }
+        .header .top-content .top .logined .wel {
+          float: right;
+          font-size: 13px;
+          padding: 0 2px;
+          color: #333333; }
+        .header .top-content .top .logined .user {
+          float: right;
+          font-size: 13px;
+          padding: 0 8px;
+          color: #333333; }
   .header .logo-content {
     width: 100%;
     background: #ffffff;

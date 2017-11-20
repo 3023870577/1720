@@ -1,10 +1,9 @@
 requirejs.config({
     paths : {
-        jquery : "jquery-1.11.3",
-        pb:"publick"
+        jquery : "jquery-1.11.3"
     }
 })
-requirejs(["jquery","pb"], function ($,pb){
+requirejs(["jquery"], function ($){
     $(function () {
         //ajax方法请求公共的HTML文件
         $("#head").load("publick.html .header",function(){
@@ -88,6 +87,7 @@ requirejs(["jquery","pb"], function ($,pb){
                 var $width = parseInt($(".hot-item").eq(0).innerWidth());
                 if (Math.abs($left) >= 2280) {
                     $hotList.css("left", "$left");
+                    toggle = true;
                 } else {
                     $hotList.animate({ "left": $left - ($width * 4) + "px" }, 1000,function(){
                         toggle = true;
@@ -146,7 +146,7 @@ requirejs(["jquery","pb"], function ($,pb){
             })
             // 点击返回顶部
             $btn.click(function(){
-                $("body,html").animate({ scrollTop: 0 }, 2000);
+                $("body,html").animate({ scrollTop: 0 },1000);
             })
         });
     })
