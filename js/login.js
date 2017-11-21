@@ -57,15 +57,28 @@ requirejs(["jquery", "cookie"], function ($, cookie){
 					password : $(".password").val()
 				}
 				arr = getCookie("userlist");
-				for(var i = 0; i < arr.length; i ++){
-					if(user.username == arr[i].username&&user.password == arr[i].password){
-						alert("登录成功");
-						location.href = "index.html";
+				if(arr.length!=0){
+					for(var i = 0; i < arr.length; i ++){
+						if(user.username == arr[i].username&&user.password == arr[i].password){
+							alert("登录成功");
+							setCookie("logineduser",JSON.stringify(user));
+							//console.log(getCookie("logineduser"));
+							location.href = "index.html";
+							
+						}else{
+							alert("用户名不存在");
+						}
 					}
-				}
+				}else{
+					alert("用户未注册")
+				}	
 			}else{
 				alert("用户名或密码不正确");
 			}
+		})
+//		注册
+		$(".btn").click(function(){
+			location.href = "register.html";
 		})
     })
 })

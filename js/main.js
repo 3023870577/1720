@@ -1,9 +1,10 @@
 requirejs.config({
     paths : {
-        jquery : "jquery-1.11.3"
+        jquery : "jquery-1.11.3",
+        cookie : "cookie"
     }
 })
-requirejs(["jquery"], function ($){
+requirejs(["jquery","cookie"], function ($,cookie){
     $(function () {
         //ajax方法请求公共的HTML文件
         $("#head").load("publick.html .header",function(){
@@ -31,7 +32,29 @@ requirejs(["jquery"], function ($){
                 }else{
                     $nav.css({ "position": "relative", "top": "null", "width": "100%" })
                 }
-            })            
+            })  
+//          用户登录和注册部分
+			$(".login").click(function(){
+				location.href = "login.html";
+			})
+			$(".register").click(function(){
+				location.href = "register.html"
+			})
+			$(".sigout").click(function(){
+				$(".login-0").css("display","block");
+            	$(".logined").css("display","none");
+                removeCookie("logineduser");
+                console.log(getCookie("logineduser"));
+			})
+            var str = getCookie("logineduser");
+            if(str.length != 0){
+            	$(".login-0").css("display","none");
+            	$(".logined").css("display","block");
+            	$(".user").html(str.username);
+            }else{
+                $(".login-0").css("display", "block");
+                $(".logined").css("display", "none");
+            }
         });
         // 轮播图
         var timer = setInterval(autoplay, 3000);

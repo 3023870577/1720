@@ -86,6 +86,7 @@ requirejs(["jquery","cookie"], function ($,cookie) {
 				//利用开关控制是否向cookie中存信息
 				var flag = true;
 				//创建用户对象
+				
 				var userInfo = {
 					username : $(".email").val(),
 					password : $(".psd").val(),
@@ -101,16 +102,24 @@ requirejs(["jquery","cookie"], function ($,cookie) {
 				}
 				if(flag){
 					arr.push(userInfo);
-					setTimeout(function(){
-						alert("注册成功,将跳转到登录页面");
-						location.href = "login.html";
-					},1000);
+//					setTimeout(function(){
+//						alert("注册成功,将跳转到登录页面");
+//						location.href = "login.html";
+//					},1000);
 				}
+				console.log(arr);
 				//将用户信息存入到cookie
 				setCookie("userlist",JSON.stringify(arr));
+				console.log(getCookie());
 			}else{
 				alert("用户信息填写不完整");
 			}
 		})
+//		登录
+		$(".hasaccount").click(function(){
+			location.href = "login.html";
+		})
     })
 })
+
+

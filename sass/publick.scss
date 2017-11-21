@@ -163,6 +163,7 @@ img{border:0;display:block;}
                 padding:11px 0;
                 width:230px;
                 height:20px;
+                outline: none;
             }
             .submit{
                 position: absolute;
@@ -209,6 +210,7 @@ img{border:0;display:block;}
                         height: 0;
                         overflow: hidden;
                         background: #ffffff;
+                        box-shadow: 0 0 8px #dddddd;
                         .wine-warp{
                             width: 1120px;
                             height: 164px;

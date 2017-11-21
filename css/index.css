@@ -151,7 +151,8 @@ img {
         border: none;
         padding: 11px 0;
         width: 230px;
-        height: 20px; }
+        height: 20px;
+        outline: none; }
       .header .logo-content .search .submit {
         position: absolute;
         top: 0;
@@ -191,7 +192,8 @@ img {
             z-index: -5;
             height: 0;
             overflow: hidden;
-            background: #ffffff; }
+            background: #ffffff;
+            box-shadow: 0 0 8px #dddddd; }
             .header .nav-content .position-content .nav .nav-item .nav-down .wine-warp {
               width: 1120px;
               height: 164px;
