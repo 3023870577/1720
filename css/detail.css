@@ -488,7 +488,8 @@ img {
     #body .pro-content .pro-album {
       width: 600px;
       float: left;
-      margin-bottom: 26px; }
+      margin-bottom: 26px;
+      position: relative; }
       #body .pro-content .pro-album .pro-album-thumb {
         width: 72px;
         height: 510px;
@@ -525,27 +526,63 @@ img {
           width: 72px;
           height: 478px;
           overflow: hidden; }
-          #body .pro-content .pro-album .pro-album-thumb .thumb-con .thumb-list li {
-            display: block;
-            width: 70px;
-            height: 70px;
-            border: 1px solid #eeeeee;
-            margin-bottom: 4px; }
-            #body .pro-content .pro-album .pro-album-thumb .thumb-con .thumb-list li img {
+          #body .pro-content .pro-album .pro-album-thumb .thumb-con .thumb-list {
+            margin-top: 0; }
+            #body .pro-content .pro-album .pro-album-thumb .thumb-con .thumb-list li {
+              display: block;
               width: 70px;
-              height: 70px; }
-          #body .pro-content .pro-album .pro-album-thumb .thumb-con .thumb-list .act {
-            border: 1px solid #d92a4b; }
+              height: 70px;
+              border: 1px solid #eeeeee;
+              margin-bottom: 4px; }
+              #body .pro-content .pro-album .pro-album-thumb .thumb-con .thumb-list li img {
+                width: 70px;
+                height: 70px; }
+            #body .pro-content .pro-album .pro-album-thumb .thumb-con .thumb-list .act {
+              border: 1px solid #d92a4b; }
       #body .pro-content .pro-album .pro-album-preview {
         width: 510px;
         height: 510px;
         position: relative;
         float: right; }
+        #body .pro-content .pro-album .pro-album-preview .mask {
+          width: 200px;
+          height: 200px;
+          background: #cccccc;
+          opacity: .4;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 5;
+          display: none; }
+        #body .pro-content .pro-album .pro-album-preview .big-mask {
+          width: 510px;
+          height: 510px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 10;
+          background: red;
+          opacity: 0; }
         #body .pro-content .pro-album .pro-album-preview img {
           width: 510px;
           height: 510px;
           position: absolute; }
         #body .pro-content .pro-album .pro-album-preview .active {
+          z-index: 1; }
+      #body .pro-content .pro-album .pro-album-big {
+        position: absolute;
+        left: 600px;
+        top: 0;
+        width: 509px;
+        height: 509px;
+        display: none;
+        border: 1px solid #eee;
+        overflow: hidden; }
+        #body .pro-content .pro-album .pro-album-big img {
+          width: 700px;
+          height: 700px;
+          position: absolute; }
+        #body .pro-content .pro-album .pro-album-big .active {
           z-index: 1; }
     #body .pro-content .pro-info {
       margin-left: 626px;
@@ -672,7 +709,8 @@ img {
     line-height: 52px;
     border-bottom: 1px solid #eee;
     background: #ffffff;
-    text-align: center; }
+    text-align: center;
+    z-index: 99; }
     #body .detail-nav .nav-list {
       width: 630px;
       margin: 0 auto;
@@ -686,6 +724,20 @@ img {
       #body .detail-nav .nav-list .cur {
         color: #d92a4b;
         border-bottom: 3px solid #d92a4b; }
+      #body .detail-nav .nav-list .list-buy-btn .nav-buy-btn {
+        width: 120px;
+        line-height: 34px;
+        background: #d92a4b;
+        color: #ffffff;
+        font-size: 14px;
+        border: none;
+        border-radius: 3px;
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        margin-left: 400px;
+        outline: 0;
+        display: none; }
   #body .dt-par {
     width: 1120px;
     margin: 40px auto 20px;
@@ -710,32 +762,32 @@ img {
         #body .dt-par .dt-par-detail dl dd {
           float: left;
           color: #333; }
-  #body .product-detail {
+  #body #product-detail {
     width: 100%;
     overflow: hidden;
     position: relative; }
-    #body .product-detail .detail-img {
+    #body #product-detail .detail-img {
       width: 1920px;
       left: 50%;
       position: relative;
       margin-left: -960px; }
-      #body .product-detail .detail-img img {
+      #body #product-detail .detail-img img {
         display: block;
         width: 1920px;
         height: auto; }
-  #body .product-problem {
+  #body #product-problem {
     padding: 50px 70px;
     width: 980px;
     margin: 0 auto; }
-    #body .product-problem h2 {
+    #body #product-problem h2 {
       font-size: 30px;
       color: #333; }
-    #body .product-problem .p-fix {
+    #body #product-problem .p-fix {
       line-height: 36px;
       color: #333;
       font-size: 16px;
       margin-top: 10px; }
-    #body .product-problem span {
+    #body #product-problem span {
       font-size: 14px; }
 
 /*# sourceMappingURL=detail.css.map */
