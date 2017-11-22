@@ -57,7 +57,8 @@ img {
           .header .top-content .top .login-0 .main-unlogin a {
             padding: 0 8px;
             float: right;
-            font-size: 13px; }
+            font-size: 13px;
+            color: #333333; }
             .header .top-content .top .login-0 .main-unlogin a .icon-weibo {
               color: #d92a4b;
               font-size: 14px; }
@@ -72,7 +73,8 @@ img {
           font-size: 13px; }
           .header .top-content .top .login-0 .cart-unlogin .cart-txt {
             line-height: 17px;
-            margin: 0 3px; }
+            margin: 0 3px;
+            color: #333333; }
             .header .top-content .top .login-0 .cart-unlogin .cart-txt .icon-shop {
               margin: 0 3px; }
             .header .top-content .top .login-0 .cart-unlogin .cart-txt b {
@@ -919,5 +921,33 @@ img {
           text-align: center;
           line-height: 50px;
           font-size: 14px; }
+
+.stair {
+  position: fixed;
+  top: 300px;
+  left: 10px;
+  width: 32px;
+  background: #ffffff;
+  z-index: 100;
+  display: none; }
+  .stair .stair-item {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    text-align: center;
+    line-height: 32px;
+    position: relative; }
+    .stair .stair-item span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      background: #d92a4b;
+      color: #ffffff;
+      display: none; }
 
 /*# sourceMappingURL=index.css.map */

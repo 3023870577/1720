@@ -173,6 +173,46 @@ requirejs(["jquery","cookie"], function ($,cookie){
             })
         });
     })
+
+    // 楼梯部分
+    $(function(){
+        var $louticon = $(".louti");
+        var $louti = $(".stair-item");
+        var flage = true;
+        //点击楼层
+        $louti.click(function(){
+            flage = false;
+            var $index = $(this).index();
+            $louti.find("span").css({ "display": "none" });
+            $(this).find("span").css({"display":"block"});
+            var $top = $louticon.eq($index).offset().top;
+            // console.log($index);
+            // console.log($top);
+            $("body,html").stop().animate({scrollTop : $top - 20},500,function(){
+                flage = true;
+            });
+        });
+        // 浏览器窗口滚动
+        $(window).scroll(function(){
+            if(flage){
+                var $t = $(this).scrollTop();
+                if($t > 700){
+                    $(".stair").fadeIn();
+                }else{
+                    $(".stair").fadeOut();
+                }
+                $louticon.each(function(){
+                    var $num = $(this).index()-2;
+                    var $height = $louticon.eq($num).offset().top + $(this).height() / 2;
+                    if($t < $height){
+                        $louti.find("span").css({ "display": "none" });
+                        $louti.eq($num).find("span").css({ "display": "block" });
+                        return false;
+                    }
+                })
+            }
+        })
+    })
     // ajak部分
     $(function () {
         $.getJSON("../mossel.json", function (res) {

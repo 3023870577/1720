@@ -102,10 +102,10 @@ requirejs(["jquery","cookie"], function ($,cookie) {
 				}
 				if(flag){
 					arr.push(userInfo);
-//					setTimeout(function(){
-//						alert("注册成功,将跳转到登录页面");
-//						location.href = "login.html";
-//					},1000);
+					setTimeout(function(){
+						alert("注册成功,将跳转到登录页面");
+						location.href = "login.html";
+					},1000);
 				}
 				console.log(arr);
 				//将用户信息存入到cookie
